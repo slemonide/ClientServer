@@ -5,11 +5,12 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
 
+import static config.Configuration.PORT;
+
 /**
  * A simple TCP server
  */
 public class TCPServer {
-    static final int PORT = 3000;
     private static ServerSocket serverSocket;
     private static Scanner scanner;
 

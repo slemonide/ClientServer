@@ -7,12 +7,13 @@ import java.io.PrintStream;
 import java.net.Socket;
 import java.util.Scanner;
 
+import static config.Configuration.PORT;
+import static config.Configuration.SERVER;
+
 /**
  * A simple TCP client
  */
 public class TCPClient {
-    private static final String SERVER = "127.0.0.1";
-    private static final int PORT = TCPServer.PORT;
     private static Scanner scanner;
     private static Socket socket;
 
