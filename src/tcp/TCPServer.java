@@ -32,9 +32,8 @@ public class TCPServer {
             while (clientSocket.isConnected()) {
                 try {
                     String nextLine = input.readLine();
-                    while (nextLine != null) {
+                    if (nextLine != null) {
                         System.out.println("CLIENT: " + nextLine);
-                        nextLine = input.readLine();
                     }
                     output.println(scanner.nextLine());
                 } catch (IOException ignored) {}

@@ -29,9 +29,8 @@ public class TCPClient {
             output.println(scanner.nextLine());
 
             String nextLine = input.readLine();
-            while (nextLine != null) {
+            if (nextLine != null) {
                 System.out.println("SERVER: " + nextLine);
-                nextLine = input.readLine();
             }
         }
     }
