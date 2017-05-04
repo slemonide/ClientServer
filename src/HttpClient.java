@@ -9,8 +9,8 @@ import java.util.Objects;
  *
  */
 public class HttpClient {
-    private static final String HOSTNAME = "dfwk.ru";
-    private static final String PAGE = "/Masterwork_dwarf_fortress";
+    private static final String HOSTNAME = "www.example.com";
+    private static final String PAGE = "/index.html";
 
     public static void main(String[] args) throws IOException {
         Socket sock = new Socket(HOSTNAME, 80);
